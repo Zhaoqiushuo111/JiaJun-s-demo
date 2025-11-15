@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"f104_canspeed\startup_stm32f407xx.o"
+"f104_canspeed\main.o"
+"f104_canspeed\gpio.o"
+"f104_canspeed\can.o"
+"f104_canspeed\stm32f4xx_it.o"
+"f104_canspeed\stm32f4xx_hal_msp.o"
+"f104_canspeed\stm32f4xx_hal_can.o"
+"f104_canspeed\stm32f4xx_hal_rcc.o"
+"f104_canspeed\stm32f4xx_hal_rcc_ex.o"
+"f104_canspeed\stm32f4xx_hal_flash.o"
+"f104_canspeed\stm32f4xx_hal_flash_ex.o"
+"f104_canspeed\stm32f4xx_hal_flash_ramfunc.o"
+"f104_canspeed\stm32f4xx_hal_gpio.o"
+"f104_canspeed\stm32f4xx_hal_dma_ex.o"
+"f104_canspeed\stm32f4xx_hal_dma.o"
+"f104_canspeed\stm32f4xx_hal_pwr.o"
+"f104_canspeed\stm32f4xx_hal_pwr_ex.o"
+"f104_canspeed\stm32f4xx_hal_cortex.o"
+"f104_canspeed\stm32f4xx_hal.o"
+"f104_canspeed\stm32f4xx_hal_exti.o"
+"f104_canspeed\system_stm32f4xx.o"
+"f104_canspeed\pid.o"
+--strict --scatter "F104_CanSpeed\F104_CanSpeed.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "F104_CanSpeed.map" -o F104_CanSpeed\F104_CanSpeed.axf
